@@ -27,7 +27,7 @@ body {
 	<h4>Booking Number :{}</h4>
 	<br>
 	<br>
-	<a href="home">Confirm Another Booking</a>
+	<a href="doBook.htm">Confirm Another Booking</a>
 	
 	
 </body>
