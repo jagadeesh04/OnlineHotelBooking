@@ -26,28 +26,28 @@ body {
 	<br>
 	<h3>Book a Room</h3>
 	<br>
-	<form:form action="addBooking.htm" method="post"
+	<form:form action="doBook.htm" method="post"
 		modelAttribute="booking">
 
 		<table align="center">
 			<tr>
 				<td class='alnright'>Customer Name:</td>
-				<td><input /></td>
+				<td><input type="text" name="customerName"/></td>
 			</tr>
 
 			<tr>
 				<td class='alnright'>Email:</td>
-				<td><input /></td>
+				<td><input type="text" name="email"/></td>
 			</tr>
 
 			<tr>
 				<td class='alnright'>Phone:</td>
-				<td><input /></td>
+				<td><input type="text" name="phone"/></td>
 			</tr>
 
 			<tr>
 				<td class='alnright'>Address:</td>
-				<td><input /></td>
+				<td><input  type="text" name="address"/></td>
 			</tr>
 
 			<tr>
@@ -64,13 +64,13 @@ body {
 			</tr>
 
 			<tr>
-				<td class='alnright'>No of Persons:</td>
-				<td><input /></td>
+				<td class='alnright' >No of Persons:</td>
+				<td><input  type="text" name="noOfPersons"/></td>
 			</tr>
 
 			<tr>
-				<td class='alnright'>No of Rooms:</td>
-				<td><input /></td>
+				<td class='alnright' >No of Rooms:</td>
+				<td><input  type="text" name="noOfRooms"/></td>
 			</tr>
 
 			<tr>

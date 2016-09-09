@@ -23,7 +23,7 @@ body {
 
 	<hr>
 
-	<a href="doBook.htm">Book a Room</a>
+	<a href="addBooking.htm">Book a Room</a>
 
 	<br>
 	<br>
