@@ -23,7 +23,7 @@ public class Booking {
 	public Booking(String customerName, String email, String phone, String address, String room,
 			int noOfPersons, int noOfRooms, String breakFast, String checkIn, String checkOut) {
 		int id = count.incrementAndGet();
-		this.bookingId = "B"+id;
+		this.bookingId = "B"+String.format("%03d", id);
 		this.customerName = customerName;
 		this.email = email;
 		this.phone = phone;
