@@ -23,9 +23,9 @@ body {
 
 	<hr>
 
-	<a href="doBook">Book a Room</a>
+	<a href="doBook.htm">Book a Room</a>
 
 	<br>
 	<br>
-	<a href="viewBook">Show Booking Details</a>
+	<a href="viewBook.htm">Show Booking Details</a>
 </html>

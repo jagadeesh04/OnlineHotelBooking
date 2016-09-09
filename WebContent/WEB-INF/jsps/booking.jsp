@@ -10,6 +10,8 @@ body {
 	text-align: center;
 	vertical-align: middle;
 }
+
+.alnright { text-align: left; }
 </style>
 
 </head>
@@ -22,29 +24,29 @@ body {
 	<h3>Book a Room</h3>
 	<br>
 	
-	<table>
+	<table align="center">
 	<tr>
-	<td>Customer Name:</td>
+	<td class='alnright'>Customer Name:</td>
 	<td><input /></td>
 	</tr>
 	
 	<tr>
-	<td>Email:</td>
+	<td class='alnright'>Email:</td>
 	<td><input /></td>
 	</tr>
 	
 	<tr>
-	<td>Phone:</td>
+	<td class='alnright'>Phone:</td>
 	<td><input /></td>
 	</tr>
 	
 	<tr>
-	<td>Address:</td>
+	<td class='alnright'>Address:</td>
 	<td><input /></td>
 	</tr>
 	
 	<tr>
-	<td>Room:</td>
+	<td class='alnright'>Room:</td>
 	<td>
 <select>
   <option value="select" selected="selected">Select</option>
@@ -55,31 +57,33 @@ body {
 	</tr>
 	
 	<tr>
-	<td>No of Persons:</td>
+	<td class='alnright'>No of Persons:</td>
 	<td><input /></td>
 	</tr>
 	
 	<tr>
-	<td>No of Rooms:</td>
+	<td class='alnright'>No of Rooms:</td>
 	<td><input /></td>
 	</tr>
 	
 	<tr>
-	<td>Breakfast:</td>
+	<td class='alnright'>Breakfast:</td>
 	<td><input type="radio" name="breakfast" value="yes"> Yes<br>
   <input type="radio" name="breakfast" value="no"> No<br></td>
 	</tr>
 	
 	<tr>
-	<td>Check In(dd-MMM-yyyy):</td>
+	<td class='alnright'>Check In(dd-MMM-yyyy):</td>
 	<td><input type="text" name="fname" placeholder="dd-MMM-yyyy" ></td>
 	</tr>
 	
 	<tr>
-	<td>Check Out(dd-MMM-yyyy):</td>
+	<td class='alnright'>Check Out(dd-MMM-yyyy):</td>
 	<td><input type="text" name="fname" placeholder="dd-MMM-yyyy" ></td>
 	</tr>
-	
+	<tr>
+	<td class='alnright'><input type="submit" value="Confirm Booking"></td>
+	</tr>
 	</table>
 	
 	
