@@ -12,7 +12,7 @@ public class UserController {
 		
 	model.addAttribute("name", "Ram");
 		
-		return "home";
+		return "index";
 	}
 	
 }
