@@ -20,14 +20,13 @@ body {
 	<hr>
 
 	<br>
-	
 	<h4>Booking Successfully Done !!</h4>
 	<br>
 	<br>
-	<h4>Booking Number :{}</h4>
+	<h4>Booking Number :{<%= request.getAttribute("booking") %>}</h4>
 	<br>
 	<br>
-	<a href="doBook.htm">Confirm Another Booking</a>
+	<a href="addBook.htm">Confirm Another Booking</a>
 	
 	
 </body>

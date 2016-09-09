@@ -54,7 +54,10 @@ public class BookingController {
 		Booking booking = new Booking(customerName, email, phone, address, room, noOfPersons, noOfRooms, breakFast, checkIn, checkOut);
 		
 		bookingService.addBooking(booking);
-		return new ModelAndView("/bookingSuccess");
+		
+		String bookingId = booking.getBookingId();
+		System.out.println("booking id is "+bookingId);
+		return new ModelAndView("/bookingSuccess", "booking", bookingId);
 
 	}
 
