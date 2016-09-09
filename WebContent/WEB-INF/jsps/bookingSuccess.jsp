@@ -5,8 +5,30 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+<style type="text/css">
+body {
+	text-align: center;
+	vertical-align: middle;
+}
+</style>
+
 </head>
 <body>
 
+	<h1>UKP Hotels Online Booking</h1>
+
+	<hr>
+
+	<br>
+	
+	<h4>Booking Successfully Done !!</h4>
+	<br>
+	<br>
+	<h4>Booking Number :{}</h4>
+	<br>
+	<br>
+	<a href="home">Confirm Another Booking</a>
+	
+	
 </body>
 </html>
