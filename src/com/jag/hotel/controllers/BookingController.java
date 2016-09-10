@@ -47,9 +47,9 @@ public class BookingController {
 		String room = iRequest.getParameter("room");
 		int noOfPersons = Integer.parseInt(iRequest.getParameter("noOfPersons"));
 		int noOfRooms = Integer.parseInt(iRequest.getParameter("noOfRooms"));
-		String breakFast = iRequest.getParameter("breakFast");
-		String checkIn= iRequest.getParameter("email");
-		String checkOut = iRequest.getParameter("email");
+		String breakFast = iRequest.getParameter("breakfast");
+		String checkIn= iRequest.getParameter("checkIn");
+		String checkOut = iRequest.getParameter("checkOut");
 		
 		Booking booking = new Booking(customerName, email, phone, address, room, noOfPersons, noOfRooms, breakFast, checkIn, checkOut);
 		
