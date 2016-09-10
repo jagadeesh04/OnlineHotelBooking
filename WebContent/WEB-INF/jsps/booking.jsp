@@ -162,6 +162,13 @@ div {
 		}
 
 	}
+	
+	function setValue(){
+		var index = document.getElementById("room").selectedIndex;
+		
+	}
+	
+	
 </script>
 
 </head>
@@ -203,12 +210,10 @@ div {
 
 			<tr>
 				<td class='alnright'>Room:</td>
-				<td><select id="room">
+				<td><select id="room" name="room" onchange="return setValue();">
 						<option value="select" selected="selected">Select</option>
-						<option value="A/C Executive Double Room">A/C Executive
-							Double Room</option>
-						<option value="A/C Deluxe Double Room">A/C Deluxe Double
-							Room</option>
+						<option value="A/C Executive Double Room">A/C Executive Double Room</option>
+						<option value="A/C Deluxe Double Room">A/C Deluxe Double Room</option>
 						<option value="A/C Suite">A/C Suite</option>
 						<option value="Dormitory">Dormitory</option>
 				</select></td>
@@ -248,14 +253,14 @@ div {
 
 			<tr>
 				<td class='alnright'>Check In(dd-MMM-yyyy):</td>
-				<td><input type="text" name="fname" placeholder="dd-MMM-yyyy"
+				<td><input type="text" name="checkIn" placeholder="dd-MMM-yyyy"
 					id="checkIn"></td>
 				<td><div id="checkinError" style="color: red;"></div></td>
 			</tr>
 
 			<tr>
 				<td class='alnright'>Check Out(dd-MMM-yyyy):</td>
-				<td><input type="text" name="fname" placeholder="dd-MMM-yyyy"
+				<td><input type="text" name="checkOut" placeholder="dd-MMM-yyyy"
 					id="checkOut"></td>
 				<td><div id="checkOutError" style="color: red;"></div></td>
 			</tr>
