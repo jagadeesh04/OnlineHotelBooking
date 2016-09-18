@@ -20,9 +20,6 @@ public class BookingService {
 
 	public List<Booking> getAllBookings() {
 		List<Booking> list = new LinkedList<Booking>(bookings.values());
-		for (int i = 0; i < list.size(); i++) {
-			Booking booking = list.get(i);
-		}
 		return list;
 	}
 

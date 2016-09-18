@@ -47,24 +47,27 @@ public class BookingController {
 		String checkIn = iRequest.getParameter("checkIn");
 		String checkOut = iRequest.getParameter("checkOut");
 
+		String bookingId = addBookingInService(customerName, email, phone, address, room, noOfPersons, noOfRooms,
+				breakFast, checkIn, checkOut);
+		return new ModelAndView("/bookingSuccess", "booking", bookingId);
+
+	}
+
+	private String addBookingInService(String customerName, String email, String phone, String address, String room,
+			int noOfPersons, int noOfRooms, String breakFast, String checkIn, String checkOut) {
 		Booking booking = new Booking(customerName, email, phone, address, room, noOfPersons, noOfRooms, breakFast,
 				checkIn, checkOut);
 
 		bookingService.addBooking(booking);
 
 		String bookingId = booking.getBookingId();
-		return new ModelAndView("/bookingSuccess", "booking", bookingId);
-
+		return bookingId;
 	}
 
 	@RequestMapping("viewBook.htm")
 	public ModelAndView viewBooking() {
 		List<Booking> bookings = new LinkedList<>();
 		bookings = bookingService.getAllBookings();
-		for (int i = 0; i < bookings.size(); i++) {
-			Booking booking = bookings.get(i);
-		}
-
 		return new ModelAndView("bookingDetails", "bookings", bookings);
 	}
 
